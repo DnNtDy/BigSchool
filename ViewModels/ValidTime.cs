@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Linq;
 using System.Web;
-using System.Web.UI.WebControls;
 
 namespace BigSchool.ViewModels
 {
@@ -13,11 +12,12 @@ namespace BigSchool.ViewModels
         public override bool IsValid(object value)
         {
             DateTime dateTime;
-            var isValid = DateTime.TryParseExact(Convert.ToString(value), "HH:mm", 
-                CultureInfo.CurrentCulture, 
-                DateTimeStyles.None, 
-                out dateTime);
-
+            var isValid = DateTime.TryParseExact(Convert.ToString(value),
+                "HH:mm",
+                CultureInfo.CurrentCulture,
+                DateTimeStyles.None,
+                out dateTime
+                );
             return isValid;
         }
     }

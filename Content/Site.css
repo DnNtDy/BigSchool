@@ -12,7 +12,7 @@
     background-color: #d41d50;
     border-color: #ffd800;
 }
-.navbar-inverse . navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a {
     color: white;
 }
 .navbar-inverse .navbar-brand {
@@ -21,7 +21,59 @@
 .dl-horizontal dt {
     white-space: normal;
 }
+.course {
+    list-style: none;
+}
 
+    .course > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+        .course > li .date {
+            text-align: center;
+            background-color: cornflowerblue;
+            color: lightgrey;
+            width: 60px;
+            border-radius: 8px;
+        }
+
+        .course > li .details {
+            position: absolute;
+            top: 0;
+            left: 70px;
+        }
+
+            .course > li .details .lecture {
+                color: purple;
+                font-weight: bold;
+            }
+
+            .course > li .details .category {
+                color: cyan;
+                font-style: italic;
+                text-decoration: underline;
+            }
+/*Course layout*/
+.course {
+    list-style: none;
+}
+.course > li {
+    position: relative;
+    margin-bottom: 30px;
+}
+.course > li.date {
+    text-align: center;
+    background-color: azure;
+    color: whitesmoke;
+    width: 60px;
+    border-radius: 8px;
+}
+.course > li .details {
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
